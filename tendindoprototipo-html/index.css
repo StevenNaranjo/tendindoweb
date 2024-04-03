@@ -1,0 +1,58 @@
+.paletadecolores-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.paletadecolores-paletadecolores {
+  width: 195px;
+  height: 30px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.paletadecolores-rectangle5 {
+  top: 0px;
+  left: 33px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.paletadecolores-rectangle6 {
+  top: 0px;
+  left: 99px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.paletadecolores-rectangle10 {
+  top: 0px;
+  left: 165px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.paletadecolores-rectangle11 {
+  top: 0px;
+  left: 66px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.paletadecolores-rectangle8 {
+  top: 0px;
+  left: 132px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.paletadecolores-rectangle7 {
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}

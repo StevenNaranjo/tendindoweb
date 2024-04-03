@@ -1,0 +1,848 @@
+.crear-tarea-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.crear-tarea-crear-tarea {
+  width: 100%;
+  height: 1030px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(204, 255, 249, 1);
+}
+.crear-tarea-group10 {
+  top: -28.511722564697266px;
+  left: 747.3070068359375px;
+  width: 544.2958984375px;
+  height: 406.9452819824219px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-group4 {
+  top: 127.05140785418371px;
+  left: -153.81877435408842px;
+  width: 253.6568145751953px;
+  height: 214.2052459716797px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-vector {
+  top: -45px;
+  left: 4px;
+  width: 238px;
+  height: 188px;
+  position: absolute;
+}
+.crear-tarea-vector01 {
+  top: -56px;
+  left: -9px;
+  width: 254px;
+  height: 214px;
+  position: absolute;
+}
+.crear-tarea-group3 {
+  top: 103.24915945113298px;
+  left: -52.873549839450334px;
+  width: 204px;
+  height: 207.73171997070312px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-vector02 {
+  top: 0px;
+  left: 0px;
+  width: 204px;
+  height: 195px;
+  position: absolute;
+}
+.crear-tarea-vector03 {
+  top: -5.669794115892387px;
+  left: -11.071726383124087px;
+  width: 204px;
+  height: 195px;
+  position: absolute;
+}
+.crear-tarea-group1 {
+  top: 245.62954285387968px;
+  left: -268.4700424519651px;
+  width: 203.2958526611328px;
+  height: 193.73477172851562px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-vector04 {
+  top: 7.852932681277366px;
+  left: -4.021460607685469px;
+  width: 194px;
+  height: 186px;
+  position: absolute;
+}
+.crear-tarea-vector05 {
+  top: -3.446966173060275px;
+  left: -6.731085034116973px;
+  width: 194px;
+  height: 186px;
+  position: absolute;
+}
+.crear-tarea-manchas {
+  top: 1176.8065185546875px;
+  left: 479.0979309082031px;
+  width: 544.2958374023438px;
+  height: 406.9452819824219px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-group41 {
+  top: -189.02040467200186px;
+  left: -63.82449256506516px;
+  width: 253.6568145751953px;
+  height: 214.2052459716797px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-vector06 {
+  top: -3.6201526272233195px;
+  left: 14.854418219564707px;
+  width: 238px;
+  height: 188px;
+  position: absolute;
+}
+.crear-tarea-vector07 {
+  top: 0px;
+  left: 0px;
+  width: 254px;
+  height: 214px;
+  position: absolute;
+}
+.crear-tarea-group31 {
+  top: -86.22535247476162px;
+  left: -77.59633383891196px;
+  width: 204px;
+  height: 207.73171997070312px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-vector08 {
+  top: 0px;
+  left: 0px;
+  width: 204px;
+  height: 195px;
+  position: absolute;
+}
+.crear-tarea-vector09 {
+  top: -8.320894631637202px;
+  left: 9.246210961560678px;
+  width: 204px;
+  height: 195px;
+  position: absolute;
+}
+.crear-tarea-group11 {
+  top: -338.4273880124092px;
+  left: -133.704560816288px;
+  width: 203.2958526611328px;
+  height: 193.73477172851562px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-vector10 {
+  top: -6.558134632797646px;
+  left: -5.901828055455553px;
+  width: 194px;
+  height: 186px;
+  position: absolute;
+}
+.crear-tarea-vector11 {
+  top: -5.058709670684038px;
+  left: 5.621258155414068px;
+  width: 194px;
+  height: 186px;
+  position: absolute;
+}
+.crear-tarea-manchas1 {
+  top: 45.828792572021484px;
+  left: 1591.5035400390625px;
+  width: 320px;
+  height: 494.4565124511719px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-group42 {
+  top: 155.76565214954462px;
+  left: -124.65689029560781px;
+  width: 253.6568145751953px;
+  height: 214.2052459716797px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-vector12 {
+  top: -10.54971115652154px;
+  left: -11.066292829784288px;
+  width: 238px;
+  height: 188px;
+  position: absolute;
+}
+.crear-tarea-vector13 {
+  top: 0px;
+  left: 0px;
+  width: 254px;
+  height: 214px;
+  position: absolute;
+}
+.crear-tarea-group32 {
+  top: 111.86585017670222px;
+  left: -30.6925693671501px;
+  width: 204px;
+  height: 207.73171997070312px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-vector14 {
+  top: 0px;
+  left: 0px;
+  width: 204px;
+  height: 195px;
+  position: absolute;
+}
+.crear-tarea-vector15 {
+  top: -3.291259045929337px;
+  left: -11.995720753137903px;
+  width: 204px;
+  height: 195px;
+  position: absolute;
+}
+.crear-tarea-group12 {
+  top: 14.586424746295961px;
+  left: -315.837409363965px;
+  width: 203.2958526611328px;
+  height: 193.73477172851562px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-vector16 {
+  top: 8.508301621450755px;
+  left: -2.3344178522802395px;
+  width: 194px;
+  height: 186px;
+  position: absolute;
+}
+.crear-tarea-vector17 {
+  top: -2.000929551621198px;
+  left: -7.292829829859784px;
+  width: 194px;
+  height: 186px;
+  position: absolute;
+}
+.crear-tarea-group101 {
+  top: 808.6727905273438px;
+  left: 1596.1751708984375px;
+  width: 436.29461669921875px;
+  height: 406.9450988769531px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-group43 {
+  top: 119.5162378910436px;
+  left: -159.74390428830839px;
+  width: 253.6568145751953px;
+  height: 214.2052459716797px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-vector18 {
+  top: -12.988315927718759px;
+  left: -8.066155851977783px;
+  width: 238px;
+  height: 188px;
+  position: absolute;
+}
+.crear-tarea-vector19 {
+  top: 0px;
+  left: 0px;
+  width: 254px;
+  height: 214px;
+  position: absolute;
+}
+.crear-tarea-group33 {
+  top: 100.58913848611564px;
+  left: -57.77141112107461px;
+  width: 204px;
+  height: 207.73171997070312px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-vector20 {
+  top: 0px;
+  left: 0px;
+  width: 204px;
+  height: 195px;
+  position: absolute;
+}
+.crear-tarea-vector21 {
+  top: -6.19507373678789px;
+  left: -10.78660046463915px;
+  width: 204px;
+  height: 195px;
+  position: absolute;
+}
+.crear-tarea-group13 {
+  top: 132.8197805937716px;
+  left: -236.57615019947798px;
+  width: 203.2958526611328px;
+  height: 193.73477172851562px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-vector22 {
+  top: 7.650699121119942px;
+  left: -4.394029921539413px;
+  width: 194px;
+  height: 186px;
+  position: absolute;
+}
+.crear-tarea-vector23 {
+  top: -3.766311293467652px;
+  left: -6.55774198567633px;
+  width: 194px;
+  height: 186px;
+  position: absolute;
+}
+.crear-tarea-group102 {
+  top: 644.3136596679688px;
+  left: 1531.7618408203125px;
+  width: 204px;
+  height: 207.73171997070312px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-vector24 {
+  top: 0px;
+  left: 0px;
+  width: 204px;
+  height: 195px;
+  position: absolute;
+}
+.crear-tarea-vector25 {
+  top: -12.414005773033296px;
+  left: -0.7887648406460812px;
+  width: 204px;
+  height: 195px;
+  position: absolute;
+}
+.crear-tarea-group11 {
+  top: 54px;
+  left: 0px;
+  width: 205px;
+  height: 976px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-rectangle13 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 976px;
+  margin: auto;
+  position: absolute;
+}
+.crear-tarea-menu-general {
+  top: 16px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 132px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-text {
+  top: 41px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  right: 0px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  font-family: Andada Pro;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.crear-tarea-text02 {
+  top: 76px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  right: 0px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  font-family: Andada Pro;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.crear-tarea-text04 {
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  right: 0px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: SemiBold;
+  text-align: center;
+  font-family: Andada Pro;
+  font-weight: 600;
+  line-height: 135.0000023841858%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.crear-tarea-text06 {
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  right: 0px;
+  width: 100%;
+  bottom: -2px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  font-family: Andada Pro;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.crear-tarea-proyectos-menu {
+  top: 290px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 155.9995880126953px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.crear-tarea-text08 {
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  right: 0px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: SemiBold;
+  text-align: center;
+  font-family: Andada Pro;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.crear-tarea-text10 {
+  top: 89px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  right: 0px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  font-family: Andada Pro;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.crear-tarea-text12 {
+  top: 45px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  right: 0px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  font-family: Andada Pro;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.crear-tarea-text14 {
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  right: 0px;
+  width: 100%;
+  bottom: -1px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  font-family: Andada Pro;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.crear-tarea-line1 {
+  top: 281px;
+  left: -56px;
+  width: 300px;
+  height: 1px;
+  position: absolute;
+}
+.crear-tarea-container1 {
+  top: 208px;
+  left: 0px;
+  right: 0px;
+  width: 460px;
+  height: 613px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+}
+.crear-tarea-rectangle11 {
+  top: 0px;
+  left: 0px;
+  width: 460px;
+  height: 613px;
+  position: absolute;
+}
+.crear-tarea-text16 {
+  top: 32px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  right: 0px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 35px;
+  font-style: italic;
+  text-align: center;
+  font-family: Libre Baskerville;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.crear-tarea-campos {
+  top: 305px;
+  flex: 0 0 auto;
+  left: 0px;
+  right: 0px;
+  width: 460px;
+  height: 481px;
+  margin: auto;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.crear-tarea-textinput {
+  top: 61px;
+  left: 0px;
+  right: 0px;
+  width: 330px;
+  height: 35px;
+  margin: auto;
+  position: absolute;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 16px;
+  text-transform: none;
+  text-decoration: none;
+}
+.crear-tarea-textinput1 {
+  top: 238px;
+  left: 95px;
+  width: 270px;
+  height: 35px;
+  margin: auto;
+  position: absolute;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 16px;
+  text-transform: none;
+  text-decoration: none;
+}
+.crear-tarea-textinput2 {
+  top: 278px;
+  left: 95px;
+  width: 270px;
+  height: 35px;
+  margin: auto;
+  position: absolute;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 16px;
+  text-transform: none;
+  text-decoration: none;
+}
+.crear-tarea-textinput3 {
+  top: 318px;
+  left: 95px;
+  width: 270px;
+  height: 35px;
+  margin: auto;
+  position: absolute;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 16px;
+  text-transform: none;
+  text-decoration: none;
+}
+.crear-tarea-textarea {
+  top: 101px;
+  left: 0px;
+  right: 0px;
+  width: 330px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  border-radius: 16px;
+}
+.crear-tarea-btn-submit {
+  gap: 10px;
+  left: 0px;
+  right: 0px;
+  width: 96px;
+  bottom: 17px;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  position: absolute;
+  align-items: center;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 48px;
+  justify-content: center;
+  text-decoration: none;
+  background-color: rgba(100, 236, 255, 1);
+}
+.crear-tarea-text18 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 20px;
+  font-style: italic;
+  text-align: left;
+  font-family: Libre Baskerville;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.crear-tarea-group16 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 54px;
+  display: flex;
+  position: absolute;
+  margin-top: auto;
+  align-items: flex-start;
+  flex-shrink: 1;
+  margin-left: auto;
+  margin-right: 0px;
+  margin-bottom: auto;
+  background-color: rgba(154, 250, 226, 1);
+}
+.crear-tarea-imag-eaf14bdecfaef4ce4ac43de648aba53e3removebgprevi {
+  top: 7px;
+  left: 0px;
+  width: 51px;
+  height: 40px;
+  position: absolute;
+}
+.crear-tarea-text20 {
+  top: 15px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: italic;
+  text-align: left;
+  font-family: Libre Baskerville;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 50px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.crear-tarea-container2 {
+  top: 5px;
+  right: 0px;
+  width: 152px;
+  height: 45px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+}
+.crear-tarea-navlink1 {
+  display: contents;
+}
+.crear-tarea-group26 {
+  top: 0px;
+  left: 54px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  text-decoration: none;
+}
+.crear-tarea-vector26 {
+  top: 0px;
+  left: 0px;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+}
+.crear-tarea-image5 {
+  top: 1px;
+  left: 4px;
+  width: 37px;
+  height: 43px;
+  position: absolute;
+}
+.crear-tarea-navlink2 {
+  display: contents;
+}
+.crear-tarea-group27 {
+  top: 0px;
+  right: 0px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  text-decoration: none;
+}
+.crear-tarea-vector27 {
+  top: 0px;
+  left: 0px;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+}
+.crear-tarea-image3 {
+  top: 7px;
+  left: 11px;
+  width: 29px;
+  height: 31px;
+  position: absolute;
+}
+.crear-tarea-container3 {
+  top: 0px;
+  left: 0px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+}
+.crear-tarea-vector28 {
+  top: 0px;
+  left: 0px;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+}
+.crear-tarea-vector29 {
+  top: 7px;
+  left: 13px;
+  width: 20px;
+  height: 29px;
+  position: absolute;
+}
