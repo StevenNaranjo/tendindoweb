@@ -363,7 +363,7 @@
     };
 
     try {
-      const response = await fetch('https://requeapi-1.onrender.com/createMeeting', {
+      const response = await fetch('http://localhost:3000/createMeeting', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -373,6 +373,10 @@
 
       if (response.ok) {
         const data = await response.json();
+        if(data.message === 'Registro exitoso'){
+          alert('Reunión creada con éxito');
+          location.reload()
+        }
         console.log(data.message); // Mostrar mensaje de éxito en la consola
         // Aquí puedes hacer cualquier otra acción que desees después de que se haya creado la reunión con éxito
       } else {

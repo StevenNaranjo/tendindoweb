@@ -389,20 +389,23 @@
         const data = await createProject(proyecto);
         console.log(data);
         if (data.message === "Registro exitoso") {
+          console.log(data.idProyecto);
           const dataCollaborator = {
             cedula: ced_responsable1,
-            id_proyecto: idProyecto
+            id_proyecto: data.idProyecto
           }
           const dataollaborator = await addCollaborator(dataCollaborator);
           console.log(dataollaborator);
           console.log("Proyecto creado exitosamente");
+          alert("Proyecto creado exitosamente");
+          location.reload()
         } else {
           console.log("Error al crear el proyecto");
         }
       });
     
       async function createProject(proyecto) {
-        const response = await fetch("https://requeapi-1.onrender.com/createProject", {
+        const response = await fetch("http://localhost:3000/createProject", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -413,7 +416,7 @@
         return data;
       }
       async function addCollaborator(datos) {
-        const response = await fetch("https://requeapi-1.onrender.com/addCollaborator", {
+        const response = await fetch("http://localhost:3000/addCollaborator", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -246,14 +246,6 @@
                 <span>Crear nuevo proyecto</span>
               </a>
             </div>
-            <div class="crear-tarea-proyectos-menu">
-              <span class="crear-tarea-text08"><span>Proyectos</span></span>
-              <span class="crear-tarea-text10"><span>Proyecto 2</span></span>
-              <a href="consulta-proyecto.html" class="crear-tarea-text12">
-                <span>Proyecto 1</span>
-              </a>
-              <span class="crear-tarea-text14"><span>Proyecto 3</span></span>
-            </div>
             <img
               alt="Line11117"
               src="public/external/line11117-vty.svg"
@@ -266,39 +258,18 @@
               src="public/external/rectangle111119-y7nfi.svg"
               class="crear-tarea-rectangle11"
             />
-            <span class="crear-tarea-text16"><span>Modificar PERFIL</span></span>
+            <span class="crear-tarea-text16"><span>Agregar Colaborador</span></span>
           </div>
           <form class="crear-tarea-campos" id="loginForm" action="perfil.html" method="GET">
             <input
-              id="correo"
+              id="cedula"
               type="text"
               rows="Nombre De La Tarea"
-              placeholder="Correo Electrónico"
+              placeholder="Cedula del Colaborador"
               class="crear-tarea-textinput"
+              required
             />
-            <input
-              id="telefono"
-              type="text"
-              placeholder="Telefono"
-              class="crear-tarea-textinput1"
-            />
-            <input
-              id="departamento-de-trabajo"
-              type="text"
-              placeholder="Departamento de trabajo"
-              class="crear-tarea-textinput2"
-            />
-            <input
-              id="estado"
-              type="text"
-              placeholder="Estado"
-              class="crear-tarea-textinput3"
-            />
-            <a href="perfil.html">
-              <div class="crear-tarea-btn-submit">
-                <span class="crear-tarea-text18"><span>Cambiar</span></span>
-              </div>
-            </a>
+            <button class="crear-tarea-btn-submit" type="submit">Agregar</button>
           </form>
           <div class="crear-tarea-group16">
             <img
@@ -366,30 +337,34 @@
       document.getElementById("loginForm").addEventListener("submit", async (e) => {
         e.preventDefault();
 
-        const correo = document.getElementById('correo').value;
-        const telefono = document.getElementById('telefono').value;
-        const departamento = document.getElementById('departamento-de-trabajo').value;
-        const estado = document.getElementById('estado').value;
-
-        nuevoUsuario = usuario;
-        nuevoUsuario.correo = correo;
-        nuevoUsuario.telefono = telefono;
-        nuevoUsuario.departamento = departamento;
-
-        modifyUser(nuevoUsuario);
+        const cedula = document.getElementById('cedula').value;
+        const idProyecto = sessionStorage.getItem('projectId')
+        console.log(idProyecto);
+        const datos = {
+          cedula:cedula,
+          id_proyecto:idProyecto
+        }
+        const response = await agregarColaborador(datos);
+        if(response.message === 'Registro exitoso'){
+          console.log('Registro exitoso');
+          location.reload()
+          alert("Colaborador agregado")
+        }else{
+          console.log('Error al registrar');
+        }
       });
-
-      async function updateUser(user) {
-        const response = await fetch("https://requeapi-1.onrender.com/updateUser", {
-          method: "PUT",
+      async function agregarColaborador(datos){
+        const response = await fetch("http://localhost:3000/addCollaborator", {
+          method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(user),
+          body: JSON.stringify(datos),
         });
         const data = await response.json();
         return data;
       }
+      
 
     </script>
   </body>
