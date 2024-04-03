@@ -88,7 +88,7 @@
                   />
                 </div>
               </a>
-              <a href="index.html" class="consulta-proyecto-navlink1">
+              <a href="inicio-sesin.html" class="consulta-proyecto-navlink1">
                 <div class="consulta-proyecto-group27">
                   <img
                     alt="Vector1116"
@@ -121,48 +121,8 @@
             src="public/external/rectangle211117-2vwa-800w.png"
             class="consulta-proyecto-rectangle21"
           />
-          <div class="consulta-proyecto-container3">
-            <span class="consulta-proyecto-text02">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </span>
-            <span class="consulta-proyecto-text03">
-              <span>PROYECTO 1</span>
-            </span>
-            <span class="consulta-proyecto-text05">
-              <span>Descripción</span>
-            </span>
-            <span class="consulta-proyecto-text07">
-              <span>Luis Fernando Benavides Villegas</span>
-            </span>
-            <span class="consulta-proyecto-text09"><span>Encargado</span></span>
-            <span class="consulta-proyecto-text11">
-              <span>11/03/2024</span>
-            </span>
-            <span class="consulta-proyecto-text13">
-              <span>Fecha de inicio</span>
-            </span>
-            <span class="consulta-proyecto-text15">
-              <span>800.000 colones</span>
-            </span>
-            <span class="consulta-proyecto-text17">
-              <span>Presupuesto</span>
-            </span>
-            <span class="consulta-proyecto-text19">
-              <span>Computadoras</span>
-            </span>
-            <span class="consulta-proyecto-text21">
-              <span>Recursos necesarios</span>
-            </span>
-            <span class="consulta-proyecto-text23"><span>Piola</span></span>
-            <span class="consulta-proyecto-text25">
-              <span>Estado del proyecto</span>
-            </span>
+          <div class="consulta-proyecto-container3" id="consulta-proyectos-container">
+            
           </div>
           <div class="consulta-proyecto-group12">
             <img
@@ -216,7 +176,7 @@
                 <span>Programar reunión</span>
               </a>
               <span class="consulta-proyecto-text49">
-                <span>Modificar información</span>
+                <span> <a href="modificardatosproyecto.html">Agregar colaborador</a> </span>
               </span>
               <span class="consulta-proyecto-text51">
                 <span>Historial de cambios</span>
@@ -238,26 +198,15 @@
                 <span>Notificaciones</span>
               </a>
               <span class="consulta-proyecto-text59">
-                <span>Alex Naranjo</span>
+                <span id="nombre">Alex Naranjo</span>
               </span>
               <a href="crear-proyecto.html" class="consulta-proyecto-text61">
                 <span>Crear nuevo proyecto</span>
               </a>
             </div>
-            <div class="consulta-proyecto-proyectos-menu">
-              <span class="consulta-proyecto-text63">
-                <span>Proyectos</span>
-              </span>
-              <span class="consulta-proyecto-text65">
-                <span>Proyecto 1</span>
-              </span>
-              <span class="consulta-proyecto-text67">
-                <span>Proyecto 2</span>
-              </span>
-              <span class="consulta-proyecto-text69">
-                <span>Proyecto 3</span>
-              </span>
-            </div>
+            <div class="perfil-proyectos-menu" id="proyectos-menu">
+              <span class="perfil-text32"><span>Proyectos</span></span>
+          </div>
             <img
               alt="Line11117"
               src="public/external/line11117-vty.svg"
@@ -267,5 +216,65 @@
         </div>
       </div>
     </div>
+    <script>
+      if(!sessionStorage.getItem('usuario')){
+}
+    const usuario = JSON.parse(sessionStorage.getItem('usuario'));
+    console.log(usuario);
+    localStorage.setItem('usuario', usuario);
+    document.getElementById('nombre').innerText = usuario.nombre;
+    
+    document.addEventListener("DOMContentLoaded", function() {
+  // Obtener el ID del proyecto de la URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const projectId = parseInt(urlParams.get('id'));
+  sessionStorage.setItem('projectId', JSON.stringify(projectId));
+  // Obtener los datos de proyectos del sessionStorage
+  const projects = JSON.parse(sessionStorage.getItem('projects'));
+
+  // Verificar si hay proyectos almacenados
+  if (Array.isArray(projects)) {
+    // Encontrar el proyecto con el ID deseado
+    const project = projects.find(p => p.idProyecto === projectId);
+
+    // Verificar si se encontró el proyecto
+    if (project) {
+      // Obtener el contenedor donde se mostrará la información del proyecto
+      const container = document.getElementById("consulta-proyectos-container");
+
+      // Generar el HTML para el proyecto
+      const html = `
+        <div class="consulta-proyecto-container3">
+          <span class="consulta-proyecto-text02">${project.descripcion}</span>
+          <span class="consulta-proyecto-text03"><span>${project.nombre_proyecto}</span></span>
+          <span class="consulta-proyecto-text05"><span>Descripción</span></span>
+          <span class="consulta-proyecto-text07"><span>${project.ced_responsable}</span></span>
+          <span class="consulta-proyecto-text09"><span>Encargado</span></span>
+          <span class="consulta-proyecto-text11"><span>${project.fechaInicio}</span></span>
+          <span class="consulta-proyecto-text13"><span>Fecha de inicio</span></span>
+          <span class="consulta-proyecto-text15"><span>${project.presupuesto} colones</span></span>
+          <span class="consulta-proyecto-text17"><span>Presupuesto</span></span>
+          <span class="consulta-proyecto-text19"><span>${project.recursosNecesarios}</span></span>
+          <span class="consulta-proyecto-text21"><span>Recursos necesarios</span></span>
+          <span class="consulta-proyecto-text23"><span>${project.estado}</span></span>
+          <span class="consulta-proyecto-text25"><span>Estado del proyecto</span></span>
+        </div>
+      `;
+
+      // Agregar el HTML del proyecto al contenedor
+      container.innerHTML = html;
+    } else {
+      // Mostrar un mensaje de error si no se encontró el proyecto
+      console.error('No se encontró el proyecto con el ID especificado.');
+    }
+  } else {
+    // Mostrar un mensaje de error si no hay proyectos almacenados
+    console.error('No hay proyectos almacenados en la sesión.');
+  }
+});
+
+
+
+    </script>
   </body>
 </html>

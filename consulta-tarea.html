@@ -112,20 +112,13 @@
                 Notificaciones
               </a>
               <span class="consulta-tarea-text23">
-                <span>Alex Naranjo</span>
+                <span id="nombre">Alex Naranjo</span>
               </span>
               <a href="crear-proyecto.html" class="consulta-tarea-text25">
                 <span>Crear nuevo proyecto</span>
               </a>
             </div>
-            <div class="consulta-tarea-proyectos-menu">
-              <span class="consulta-tarea-text27"><span>Proyectos</span></span>
-              <span class="consulta-tarea-text29"><span>Proyecto 2</span></span>
-              <a href="consulta-proyecto.html" class="consulta-tarea-text31">
-                <span>Proyecto 1</span>
-              </a>
-              <span class="consulta-tarea-text33"><span>Proyecto 3</span></span>
-            </div>
+            
             <img
               alt="Line11117"
               src="public/external/line11117-vty.svg"
@@ -230,7 +223,7 @@
                   />
                 </div>
               </a>
-              <a href="index.html" class="consulta-tarea-navlink1">
+              <a href="inicio-sesin.html" class="consulta-tarea-navlink1">
                 <div class="consulta-tarea-group27">
                   <img
                     alt="Vector1116"
@@ -261,5 +254,13 @@
         </div>
       </div>
     </div>
+    <script>
+      if(!sessionStorage.getItem('usuario')){
+}
+    const usuario = JSON.parse(sessionStorage.getItem('usuario'));
+    console.log(usuario);
+    localStorage.setItem('usuario', usuario);
+    document.getElementById('nombre').innerText = usuario.nombre;
+    </script>
   </body>
 </html>

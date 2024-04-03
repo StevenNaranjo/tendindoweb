@@ -183,6 +183,24 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+.perfil-textModificar {
+  left: 46px;
+  color: rgba(0, 0, 0, 1);
+  width: 690px;
+  bottom: 40px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: SemiBold;
+  text-align:center;
+  font-family: Andada Pro;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
 .perfil-text18 {
   left: 46px;
   color: rgba(0, 0, 0, 1);

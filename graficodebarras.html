@@ -116,23 +116,13 @@
                 <span>Notificaciones</span>
               </a>
               <span class="graficodebarras-text20">
-                <span>Alex Naranjo</span>
+                <span id="nombre">Alex Naranjo</span>
               </span>
               <a href="crear-proyecto.html" class="graficodebarras-text22">
                 <span>Crear nuevo proyecto</span>
               </a>
             </div>
-            <div class="graficodebarras-proyectos-menu">
-              <span class="graficodebarras-text24"><span>Proyectos</span></span>
-              <span class="graficodebarras-text26">
-                <span>Proyecto 2</span>
-              </span>
-              <a href="consulta-proyecto.html" class="graficodebarras-text28">
-                <span>Proyecto 1</span>
-              </a>
-              <span class="graficodebarras-text30">
-                <span>Proyecto 3</span>
-              </span>
+            
             </div>
             <img
               alt="Line11117"
@@ -222,7 +212,7 @@
                   />
                 </div>
               </a>
-              <a href="index.html" class="graficodebarras-navlink1">
+              <a href="inicio-sesin.html" class="graficodebarras-navlink1">
                 <div class="graficodebarras-group27">
                   <img
                     alt="Vector1116"
@@ -253,5 +243,13 @@
         </div>
       </div>
     </div>
+    <script>
+      if(!sessionStorage.getItem('usuario')){
+}
+    const usuario = JSON.parse(sessionStorage.getItem('usuario'));
+    console.log(usuario);
+    localStorage.setItem('usuario', usuario);
+    document.getElementById('nombre').innerText = usuario.nombre;
+    </script>
   </body>
 </html>

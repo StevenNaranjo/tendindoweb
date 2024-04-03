@@ -238,42 +238,37 @@
             <span class="crear-reunion-text02"><span>Proyecto 1</span></span>
           </div>
           <div class="crear-reunion-campos">
-            <form id="crearReunionForm">
-              <input
-                type="text"
-                placeholder="Tema De La Reunión"
-                class="crear-reunion-textinput"
-                id="tema"
-              />
-              <input
-                type="text"
-                placeholder="Medio"
-                class="crear-reunion-textinput1"
-                id="medio"
-              />
-              <input
-                type="datetime-local"
-                placeholder="Fecha y Hora"
-                class="crear-reunion-textinput2"
-                id="fecha_hora"
-              />
-              <input
-                type="number"
-                placeholder="Storypoints"
-                class="crear-reunion-textinput3"
-                id="storypoints"
-              />
-              <textarea
-                placeholder="Seleccionar Invitados"
-                class="crear-reunion-textarea textarea"
-                id="invitados"
-              ></textarea>
-              <button type="submit" class="crear-reunion-btn-submit">
+            <input
+              type="text"
+              rows="Nombre De La Tarea"
+              placeholder="Tema De La Reunión"
+              class="crear-reunion-textinput"
+            />
+            <input
+              type="text"
+              placeholder="Medio"
+              class="crear-reunion-textinput1"
+            />
+            <input
+              type="text"
+              placeholder="Fecha y Hora"
+              class="crear-reunion-textinput2"
+            />
+            <input
+              type="text"
+              placeholder="Storypoints"
+              class="crear-reunion-textinput3"
+            />
+            <textarea
+              placeholder="Seleccionar Invitados"
+              class="crear-reunion-textarea textarea"
+            ></textarea>
+            <a href="consulta-proyecto.html">
+              <div class="crear-reunion-btn-submit">
                 <span class="crear-reunion-text04"><span>Crear</span></span>
-              </button>
-            </form>
+              </div>
+            </a>
           </div>
-          
           <div class="crear-reunion-group16">
             <img
               alt="IMAGEaf14bdecfaef4ce4ac43de648aba53e3removebgprevi1116"
@@ -283,47 +278,42 @@
             <span class="crear-reunion-text06">
               <span>TENDINDO TASKING</span>
             </span>
-            <div class="crear-reunion-container2">
-              <a href="perfil.html" class="crear-reunion-navlink1">
-                <div class="crear-reunion-group26">
-                  <img
-                    alt="Vector1116"
-                    src="public/external/vector1116-acs.svg"
-                    class="crear-reunion-vector26"
-                  />
-                  <img
-                    alt="image51116"
-                    src="public/external/image51116-k50g-200w.png"
-                    class="crear-reunion-image5"
-                  />
-                </div>
-              </a>
-              <a href="index.html" class="crear-reunion-navlink2">
-                <div class="crear-reunion-group27">
-                  <img
-                    alt="Vector1116"
-                    src="public/external/vector1116-eqxl.svg"
-                    class="crear-reunion-vector27"
-                  />
-                  <img
-                    alt="image31116"
-                    src="public/external/image31116-v493-200w.png"
-                    class="crear-reunion-image3"
-                  />
-                </div>
-              </a>
-              <div class="crear-reunion-container3">
-                <img
-                  alt="Vector1116"
-                  src="public/external/vector1116-6ow9.svg"
-                  class="crear-reunion-vector28"
+            <div class="crear-reunion-campos">
+              <form id="crearReunionForm">
+                <input
+                  type="text"
+                  placeholder="Tema De La Reunión"
+                  class="crear-reunion-textinput"
+                  id="tema"
                 />
-                <img
-                  alt="Vector1116"
-                  src="public/external/vector1116-ptij.svg"
-                  class="crear-reunion-vector29"
+                <input
+                  type="text"
+                  placeholder="Medio"
+                  class="crear-reunion-textinput1"
+                  id="medio"
                 />
-              </div>
+                <input
+                  type="datetime-local"
+                  placeholder="Fecha y Hora"
+                  class="crear-reunion-textinput2"
+                  id="fecha_hora"
+                />
+                <input
+                  type="number"
+                  placeholder="Storypoints"
+                  class="crear-reunion-textinput3"
+                  id="storypoints"
+                />
+                <textarea
+                  placeholder="Seleccionar Invitados"
+                  class="crear-reunion-textarea textarea"
+                  id="invitados"
+                ></textarea>
+                <button type="submit" class="crear-reunion-btn-submit">
+                  <span class="crear-reunion-text04"><span>Crear</span></span>
+                </button>
+              </form>
+            </div>
             </div>
           </div>
           <div class="crear-reunion-group11">
@@ -334,7 +324,7 @@
             />
             <div class="crear-reunion-menu-general">
               <span class="crear-reunion-text08">
-                <span>Alex Naranjo</span>
+                <span id="nombre">Alex Naranjo</span>
               </span>
               <a href="notificaciones.html" class="crear-reunion-text10">
                 <span>Notificaciones</span>
@@ -345,15 +335,7 @@
               <a href="crear-proyecto.html" class="crear-reunion-text14">
                 <span>Crear nuevo proyecto</span>
               </a>
-            </div>
-            <div class="crear-reunion-proyectos-menu">
-              <span class="crear-reunion-text16"><span>Proyectos</span></span>
-              <span class="crear-reunion-text18"><span>Proyecto 2</span></span>
-              <a href="consulta-proyecto.html" class="crear-reunion-text20">
-                <span>Proyecto 1</span>
-              </a>
-              <span class="crear-reunion-text22"><span>Proyecto 3</span></span>
-            </div>
+            </div>S
             <img
               alt="Line11117"
               src="public/external/line11117-vty.svg"
@@ -363,5 +345,43 @@
         </div>
       </div>
     </div>
+    <script>
+      if(!sessionStorage.getItem('usuario')){
+}
+    const usuario = JSON.parse(sessionStorage.getItem('usuario'));
+    console.log(usuario);
+    localStorage.setItem('usuario', usuario);
+    document.getElementById('nombre').innerText = usuario.nombre;
+    document.getElementById('crearReunionForm').addEventListener('submit', async function(event) {
+    event.preventDefault(); // Evitar que el formulario se envíe normalmente
+    const id_proyecto = sessionStorage.getItem('projectId'); // Puedes obtener el id del proyecto de donde quieras, aquí he puesto 1 como ejemp
+    const formData = {
+      tema: document.getElementById('tema').value,
+      medio: document.getElementById('medio').value,
+      fecha: document.getElementById('fecha_hora').value,
+      id_proyecto: id_proyecto // Puedes obtener el id del proyecto de donde quieras, aquí he puesto 1 como ejemplo
+    };
+
+    try {
+      const response = await fetch('https://requeapi-1.onrender.com/createMeeting', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data.message); // Mostrar mensaje de éxito en la consola
+        // Aquí puedes hacer cualquier otra acción que desees después de que se haya creado la reunión con éxito
+      } else {
+        throw new Error('Error al crear la reunión');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  });
+    </script>
   </body>
 </html>

@@ -241,19 +241,12 @@
               <a href="notificaciones.html" class="crear-tarea-text02">
                 <span>Notificaciones</span>
               </a>
-              <span class="crear-tarea-text04"><span>Alex Naranjo</span></span>
+              <span class="crear-tarea-text04"><span id="nombre">Alex Naranjo</span></span>
               <a href="crear-proyecto.html" class="crear-tarea-text06">
                 <span>Crear nuevo proyecto</span>
               </a>
             </div>
-            <div class="crear-tarea-proyectos-menu">
-              <span class="crear-tarea-text08"><span>Proyectos</span></span>
-              <span class="crear-tarea-text10"><span>Proyecto 2</span></span>
-              <a href="consulta-proyecto.html" class="crear-tarea-text12">
-                <span>Proyecto 1</span>
-              </a>
-              <span class="crear-tarea-text14"><span>Proyecto 3</span></span>
-            </div>
+            
             <img
               alt="Line11117"
               src="public/external/line11117-vty.svg"
@@ -324,7 +317,7 @@
                   />
                 </div>
               </a>
-              <a href="index.html" class="crear-tarea-navlink2">
+              <a href="inicio-sesin.html" class="crear-tarea-navlink2">
                 <div class="crear-tarea-group27">
                   <img
                     alt="Vector1116"
@@ -355,5 +348,13 @@
         </div>
       </div>
     </div>
+    <script>
+      if(!sessionStorage.getItem('usuario')){
+}
+    const usuario = JSON.parse(sessionStorage.getItem('usuario'));
+    console.log(usuario);
+    localStorage.setItem('usuario', usuario);
+    document.getElementById('nombre').innerText = usuario.nombre;
+    </script>
   </body>
 </html>

@@ -58,9 +58,9 @@
     
   </head>
   <body>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <div>
-      <link href="./perfil.css" rel="stylesheet" />
+      <link href="perfil.css" rel="stylesheet" />
 
       <div class="perfil-container">
         <div class="perfil-perfil">
@@ -70,17 +70,15 @@
               src="public/external/rectangle211111-bh5f-500h.png"
               class="perfil-rectangle21"
             />
-            <span class="perfil-text"><span>2023063599</span></span>
-            <span class="perfil-text02"><span>Alex Naranjo</span></span>
+            <span class="perfil-text"><span id="cedula">2023063599</span></span>
+            <span class="perfil-text02"><span id="nombre">Alex Naranjo</span></span>
             <span class="perfil-text04"><span>Identificación</span></span>
-            <span class="perfil-text06">
-              <span>gatitosuavecito@yahoo.com</span>
-            </span>
+            <span class="perfil-text06"><span id="correo"></span></span>
             <span class="perfil-text08"><span>Correo electrónico</span></span>
-            <span class="perfil-text10"><span>8888-8888</span></span>
+            <span class="perfil-text10"><span id="telefono">8888-8888</span></span>
             <span class="perfil-text12"><span>Teléfono</span></span>
             <span class="perfil-text14">
-              <span>Cálculo de convegencias</span>
+              <span id="departamento">Cálculo de convegencias</span>
             </span>
             <span class="perfil-text16"><span>Departamento</span></span>
             <a href="consulta-proyecto.html" class="perfil-text18">
@@ -90,6 +88,11 @@
               <span>Asignado a “Tarea 1”</span>
             </a>
             <span class="perfil-text22"><span>Estado</span></span>
+            <span class="perfil-textModificar">
+              <a href="modificar-datos.html"">
+              Modificar
+              </a>
+            </span>
           </div>
           <div class="perfil-group11">
             <img
@@ -104,18 +107,10 @@
               <a href="notificaciones.html" class="perfil-text26">
                 <span>Notificaciones</span>
               </a>
-              <span class="perfil-text28"><span>Alex Naranjo</span></span>
+              <span class="perfil-text28"><span id="nombre2">Alex Naranjo</span></span>
               <a href="crear-proyecto.html" class="perfil-text30">
                 <span>Crear nuevo proyecto</span>
               </a>
-            </div>
-            <div class="perfil-proyectos-menu">
-              <span class="perfil-text32"><span>Proyectos</span></span>
-              <span class="perfil-text34"><span>Proyecto 2</span></span>
-              <a href="consulta-proyecto.html" class="perfil-text36">
-                <span>Proyecto 1</span>
-              </a>
-              <span class="perfil-text38"><span>Proyecto 3</span></span>
             </div>
             <img
               alt="Line11117"
@@ -123,6 +118,7 @@
               class="perfil-line1"
             />
           </div>
+          
           <div class="perfil-group16">
             <img
               alt="IMAGEaf14bdecfaef4ce4ac43de648aba53e3removebgprevi1116"
@@ -145,7 +141,7 @@
                   />
                 </div>
               </a>
-              <a href="index.html" class="perfil-navlink1">
+              <a href="inicio-sesin.html" class="perfil-navlink1">
                 <div class="perfil-group27">
                   <img
                     alt="Vector1116"
@@ -176,5 +172,20 @@
         </div>
       </div>
     </div>
+    
+    <script>
+      if(!sessionStorage.getItem('usuario')){
+}
+    const usuario = JSON.parse(sessionStorage.getItem('usuario'));
+    console.log(usuario);
+    localStorage.setItem('usuario', usuario);
+    document.getElementById('nombre').innerText = usuario.nombre;
+    document.getElementById('nombre2').innerText = usuario.nombre;
+    document.getElementById('cedula').innerText = usuario.cedula;
+    document.getElementById('telefono').innerText = usuario.telefono;
+    document.getElementById('correo').innerText = usuario.correo;
+    document.getElementById('departamento').innerText = usuario.departamento;
+
+    </script>
   </body>
 </html>
